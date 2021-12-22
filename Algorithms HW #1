@@ -1,0 +1,31 @@
+# Question 1
+from random import randint
+
+random_number = randint(1,100)
+print(f'Our random number is {random_number}')
+
+# solution 
+result = 0
+for digit in str(random_number):
+    result = result + int(digit) #result += int(digit)
+
+print(f'Result of a sum: {result}')
+
+# Question 2
+
+num1 = int(input(f'Type a number here '))
+num2 = int(input(f'Type a number here '))
+num3 = int(input(f'Type a number here '))
+
+Max = max(num1,num2,num3)
+
+print(f'This is the max number: {Max}.')
+
+# Question 3
+
+your_number = int(input(f' Input your number here'))
+from collections import Counter
+def count_digits(your_number):
+    return Counter('odd' if int(d)% 2 else 'even' for d in str(your_number))
+
+print(count_digits(your_number))
