@@ -1,0 +1,24 @@
+#1
+
+your_string = input(f'Enter string here:')
+
+def split_string(your_string):
+   your_string = your_string[::-1]
+   return your_string
+
+
+
+#2
+
+your_charstring = input(f'Enter string characters here:')
+
+def uniquecharstring(your_charstring):
+
+    for x in range(len(your_charstring)):
+        for i in range(x + 1,len(your_charstring)):
+            if (your_charstring[x] == your_charstring[i]):
+                return False
+
+    return True
+
+print(uniquecharstring(your_charstring))
