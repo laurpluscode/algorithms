@@ -1,0 +1,36 @@
+#1
+
+size = len(arr)
+
+def Arithmetical_Mean(arr,size):
+    sumoe = 0
+    for i in range(size):
+        sumoe += arr[i]
+    return sumoe/size
+ans = Arithmetical_Mean(arr,size)
+
+print('Arithmetical Mean of this array is',ans)
+
+
+
+
+#2 
+
+arr = [12,45,64,1,2,4,5,3,10]
+
+print(f'This is the given array')
+print(arr)
+
+def first_second_smallest(arr):
+  arr == arr.sort()
+  arr_range = len(arr)
+  if arr_range < 2:
+      print(f'This is not invalid input')
+      return
+  elif (arr[0]== min(arr)):
+        print(arr[0],f'is the smallest number')
+        print(arr[1],f'is the second smallest')
+
+
+print(first_second_smallest(arr))
+
