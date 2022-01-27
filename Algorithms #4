@@ -1,0 +1,31 @@
+Even First:
+
+def even_sorted(arrx):
+    result_even = 0
+    result_nums = len(arrx) -1
+    while result_even < result_nums:
+        if arrx[result_even] % 2 == 0:
+            result_even += 1
+        else:
+            arrx[result_even],arrx[result_nums]= arrx[result_nums],arrx[result_even]
+            result_nums -= 1
+    return arrx
+    
+    
+    
+ Increment by one:
+ 
+def increment_arr(arr):
+    arr[-1] += 1
+    for i in reversed(range(1,len(arr))):
+        if arr[1] != 10:
+            break
+        arr[i] = 0
+        arr[i -1] += 1
+
+    if arr[0] == 10:
+        arr[0] = 1
+        arr.append(0)
+    return arr
+
+print(increment_arr(test_arr))
